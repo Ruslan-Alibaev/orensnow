@@ -35,7 +35,7 @@
                         </div>
                         <div class="header__upper-center header__logo">
                             <a href="<?php echo get_permalink(7); ?>">
-                                <div class="header__logo-text">Название сайта</div>
+                                <div class="header__logo-text">Орен</div>
                             </a>
                         </div>
                         <div class="header__upper-right">

@@ -48,7 +48,7 @@ body {
 }
 
 menu, ol, ul {
-  list-style: none;
+  list-style: circle;
 }
 
 blockquote, q {
@@ -74,7 +74,7 @@ body, header, footer {
 }
 
 a {
-  color: #666;
+  color: #fff;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }

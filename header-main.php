@@ -2,14 +2,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Подключение CSS для Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Подключение JS для Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
     <?php wp_head(); ?>
 </head>
 
 <body>
-    <nav class="menu-mob" id="menu">
+    <!-- <nav class="menu-mob" id="menu">
         <div class="menu-mob__close-btn magic-hover magic-hover__square">
             <i class="menu-mob__close icon-x"></i>
         </div>
@@ -21,7 +25,25 @@
             </ul>
             <a data-fancybox data-src="#popup__form" class="header__mob-btn magic-hover magic-hover__square">связаться</a>
         </ul>
+    </nav> -->
+
+    <nav class="side-menu" id="sideMenu">
+        <div class="dropdown">
+            <div onclick="myFunction()"><i class="icon-menu dropbtn"></i></div>
+            <div id="myDropdown" class="dropdown-content">
+                
+                    <a href="#price">Цены</a>
+                    <a href="#about">О нас</a>
+                    <a href="#where">Где кататься?</a>
+                    <a href="#reviews">Отзывы</a>
+                  <a href="#contacts">Контакты</a>
+                
+            </div>
+        </div>
     </nav>
+
+
+
     <main class="slideout-panel" id="panel">
         <header class="header">
             <div class="header__top">
@@ -33,17 +55,34 @@
                             </div>
                             <div class="header__btn-name">Меню</div>
                         </div>
+
                         <div class="header__upper-center header__logo">
-                            <a href="<?php echo get_permalink(7); ?>">
-                                <div class="header__logo-text">Название сайта</div>
+                            <a href="https://orenprokat.ru/">
+                                <img class="header__logo-img" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="Оренпрокат">
                             </a>
                         </div>
+
+                        <div class="header__upper-center-items">
+                            <a href="#price">Цены</a>
+                            <a href="#about">О нас</a>
+                            <a href="#where">Где кататься?</a>
+                            <a href="#reviews">Отзывы</a>
+                            <a href="#contacts">Контакты</a>
+                        </div>
+
                         <div class="header__upper-right">
-                            <a href="" data-fancybox data-src="#popup__call" class="header__btn-call magic-hover magic-hover__square">
-                                <i class="header__btn-call-icon icon-phone"></i>
-                            </a>
-                            <a href="" class="header__btn-connection magic-hover magic-hover__square" data-fancybox data-src="#popup__form">оставить заявку</a>
+                            <a href="tel:+73532295909" class="contacts__tel">+7 (3532) 29 59 09</a>
+
+                            <!-- <div class="header__btn-menu magic-hover magic-hover__square dropbtn" onclick="myFunction()">
+                                <i class="icon-menu"></i>
+                            </div> -->
+
                         </div>
+
+                      
+
+
+
                     </div>
                 </div>
             </div>

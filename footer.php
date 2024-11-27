@@ -1,12 +1,21 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
-            <div class="footer__logo">
-                <a href="<?php echo get_permalink(6); ?>">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/footer-logo.png" alt="">
-                </a>
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <a href="https://orenprokat.ru/">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="Прокат сноубордов, лыж">
+                    </a>
+                </div>
             </div>
-            <a href="#">Политика конфиденциальности </a>
+            
+            <div class="footer__right">
+                <a href="#price">Цены</a>
+                <a href="#about">О нас</a>
+                <a href="#where">Где кататься?</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
         </div>
     </div>
 
@@ -58,7 +67,16 @@
 
 <div id="popup__form" class="popup__block" style="display: none">
     <section class="form__section" id="form-section">
-        <div class="container">
+    <script data-b24-form="inline/134/gdgyy3" data-skip-moving="true">
+        (function(w, d, u) {
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = u + '?' + (Date.now() / 180000 | 0);
+            var h = d.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(s, h);
+        })(window, document, 'https://cdn-ru.bitrix24.ru/b9504965/crm/form/loader_134.js');
+    </script>
+        <!-- <div class="container">
             <div class="form__inner">
                 <div class="form__block">
                     <div class="form__block-inner">
@@ -68,7 +86,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </div>

@@ -45,33 +45,26 @@ if (document.querySelector('.homepage')) {
 
 
 
-// Обычный слайдер SwiperJS
-if (document.querySelector(".designers")) {
-  var swiperDes = new Swiper(".projects__items", {
-      slidesPerView: "1.3",
-      spaceBetween: 30,
-      breakpoints: {
-          640: {
-              slidesPerView: "2",
-              spaceBetween: 30,
-          },
-          1024: {
-              slidesPerView: "3",
-              spaceBetween: 30,
-          },
-      },
 
-      navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-      },
-      keyboard: {
-          enabled: true,
-          onlyInViewport: false
-      },
-      loop: true,
-  });
-};
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.reviews__box', {
+        slidesPerView: 1, // Количество видимых слайдов
+        spaceBetween: 30, // Расстояние между слайдами
+        loop: true, // Бесконечный цикл
+        
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            320: { slidesPerView: 1.2, spaceBetween: 20 },
+            768: { slidesPerView: 2.2, spaceBetween: 30 },
+            1024: { slidesPerView: 4.2, spaceBetween: 30 }
+        }
+    });
+});
+
+
 
 
 
@@ -230,3 +223,29 @@ function copyText(elem) {
   }, 1500);
 }
 */
+
+
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+
+

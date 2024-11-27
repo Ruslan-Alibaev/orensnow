@@ -1,5 +1,5 @@
 .footer {
-  background: #9d9d9d;
+  background: #000;
   height: 80px;
 }
 
@@ -11,8 +11,34 @@
   height: 100%;
 }
 
-.footer__logo {
-  height: 50px;
-  width: 50px;
-  background: #E2E2E2;
+.footer__logo img {
+  height: 40px;
+  background: #dfdfdf;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.footer__right {
+  display: flex;
+  gap: 40px;
+}
+
+
+@media(max-width: 700px) {
+.footer {
+  height: 350px;
+}
+
+.footer__inner {
+
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer__right {
+  flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 }
